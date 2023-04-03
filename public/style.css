@@ -1,0 +1,202 @@
+:root{
+    font-size: 18px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.Navbar{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-bottom: 2px solid whitesmoke;
+    background-color:cadetblue;
+    
+}
+.Navbar h1{
+    padding: 5px 30px;
+}
+.Navbar h1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.nav-part{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 20px;
+    padding: 20px 10px;
+}
+.nav-part nav a{
+    display:inline-block;
+    padding: 7px 12px;
+    margin-right: 5rem ;
+    text-decoration: none;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.btn-group .dropdown-toggle{
+    color: white;
+    background-color: white;
+}
+
+.btn-group .btn{
+    display: inline;
+    padding: 12px;
+    margin-right: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: cadetblue;
+    color: white;
+    border: 5px;    
+}
+.btn:hover{
+    color: forestgreen;
+    background-color:White;
+    border: none;
+    box-shadow: none;
+}
+
+.error{
+    margin: 10px 60px;
+    display: inline-block;
+    padding: 10px 40px;
+    color: red;
+    border: 1px solid red;
+}
+.deleted{
+    margin: 10px 60px;
+    display: inline-block;
+    padding: 10px 40px;
+    color: green;
+    border: 1px solid green;
+}
+
+
+ /* Record design part */
+
+.form{
+
+    width: 60%;
+    margin: 3rem auto;
+    position: relative;
+    top: -80px;
+    
+}
+.input{
+    width: 100%;
+}
+/*Footer*/
+footer{
+    position: relative;
+    top: 492px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    border: bottom 2px solid whitesmoke;
+    background-color: cadetblue;
+}
+footer p{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*Footer part ends */
+
+.nodata{
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    background-color: bisque;
+    color: black;
+}
+.form{
+    max-width: 60%;
+}
+
+.input{
+    display: block;
+    padding: 10px;
+    font-size: 1.3rem;
+    font-family: inherit;
+    border: 1px solid #ccc;
+}
+::placeholder{
+    font-size: smaller;
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+}
+.form-group.mb-3 ::placeholder{
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+}
+.btn.btn-primary.alert-btn{
+    background-color:cadetblue;
+}
+
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 50px;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    width: 400px;
+}
+.faculty{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    background-color: cadetblue;
+    padding: 5px;
+    height: 40px;
+}
+.faculty h3{
+    margin-top: 7px;
+    font-size: 25px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.main-part{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 15px;
+    background-color: whitesmoke;
+    border: 1px solid cadetblue;
+
+}
+.main-part h5{
+    font-weight: bold;
+}
+.main-part p{
+    font-weight: 600;
+}
+.controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    background-color: cadetblue;
+    border: 1px solid black;
+}
+.controls a{
+    color: white;
+}

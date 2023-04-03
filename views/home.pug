@@ -1,0 +1,28 @@
+extends layout.pug
+
+block content 
+
+    if deleted 
+        p.deleted Succeessfully deleted!
+
+    if added 
+        p.added Successfully recorded!
+
+    .container 
+        each record in records  
+            .wrapper 
+                .faculty 
+                    h3 #{ record.faculty }
+                .main-part 
+                    h5 #{record.name}
+                    p #{record.level}
+                    p #{ record.feedback }
+                .controls 
+                    a(href=`/recording/${record.id}`) 
+                        i.fa-solid.fa-pen-to-square
+
+                    a(href=`/${ record.id }/delete`)
+                        i.fa-solid.fa-trash
+                
+                    
+                        

@@ -1,0 +1,40 @@
+extends layout.pug 
+
+
+block content 
+
+    .container
+
+    if foundRecord
+        form.form(action=`/recording/${foundRecord.id}` method='PUT') 
+            h1.text-center.my-3 Update Record
+            label(for="name") Name*
+            input.input(type="text" name='name' value=`${foundRecord.name}`)
+
+            label(for="level") Choose your Level*
+            select.input(type="select" name="level" value=`${foundRecord.level}`)
+                option(value="")
+                option(value="level 3")  Level 3
+                option(value="level 4")  Level 4
+                option(value="level 5")  Level 5 
+                option(value="level 6")  Level 6
+
+            label(for="faculty") Choose your Faculty*
+            select.input(type="select" name="faculty" value=`${foundRecord.faculty}`)
+                option(value="")
+                option(value="Economics")  Economics 
+                option(value="Business Management")  Business Management
+                option(value="Finance")  Finance 
+                option(value="Business Information Systems")  Business Information Systems 
+                option(value="Commercial law")  Commercial Law 
+                option(value="CIFS")  CIFS           
+            if facultyError 
+                        small.text-danger #{ facultyError }
+            div.form-group.mb-3
+                    label(for="feedback") Feedback*
+                    textarea#feedback.form-control(name="feedback", cols="30", rows="8",placeholder="student feedback" value=`${foundRecord.feedback}`)
+                    if feedbackError 
+                        small.text-danger #{ feedbackError }
+            button.btn.btn-primary.alert-btn(type='submit') update
+    else 
+        div No record found!
